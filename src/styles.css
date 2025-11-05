@@ -1,0 +1,38 @@
+body {
+  background-color: #7B2D26;
+  color: #D1E3DD;
+ 
+}
+
+#nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 800px;
+    background-color: #0F1A20;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    
+
+}
+#nav-buttons{
+    display: flex;
+    gap: 64px;
+}
+.name{
+    margin-left: 50px;
+}
+
+#home, #menu, #about{
+    border: none;
+    background-color: #FFBF46;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #7B2D26;
+}
+#home:hover{
+    color: #7B2D26;
+}
