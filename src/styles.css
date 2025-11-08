@@ -1,38 +1,117 @@
 body {
-  background-color: #7B2D26;
-  color: #D1E3DD;
- 
+    background: linear-gradient(135deg, #641e16, #8e2c1a, #b33f22);
+    color: #fdf3dc;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-#nav{
+#nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 800px;
+    justify-content: space-between;
     background-color: #0F1A20;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     left: 0;
-    
-
+    height: 70px;
+    z-index: 1000;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
-#nav-buttons{
+
+#nav-buttons {
     display: flex;
-    gap: 64px;
-}
-.name{
-    margin-left: 50px;
+    gap: 48px;
+    margin-right: 50px;
 }
 
-#home, #menu, #about{
-    border: none;
-    background-color: #FFBF46;
-    padding: 12px;
-    border-radius: 8px;
-    cursor: pointer;
-    color: #7B2D26;
+.name {
+    margin-left: 50px;
+    color: #DEA54B;
 }
-#home:hover{
-    color: #7B2D26;
+
+#home, #menu, #contact {
+    border: none;
+    background-color: #0F1A20;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    border-bottom: 2px solid #DEA54B;
+    border-top: 2px solid #DEA54B;
+    padding: 8px;
+}
+
+#home:hover, #menu:hover, #contact:hover {
+    color: #DEA54B;
+    transition: 0.2s;
+}
+
+#content {
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* min-height: calc(100vh - 90px); */
+}
+
+.intro {
+    max-width: 600px;
+    padding: 30px;
+    border: 1px solid #DEA54B;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 1.6;
+    background-color: rgba(15, 26, 32, 0.7);
+    margin: 20px;
+}
+
+#explore{
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #DEA54B;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem; 
+}
+
+#explore:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #d4a017;
+  transition: 0.3s ease;
+}
+.hours{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #DEA54B;
+    font-weight: bold;
+}
+
+.hours > :first-child {
+    border-bottom: 4px solid #0F1A20;
+    padding: 16px 48px;
+    border-radius: 8px;
+}
+
+.description-box {
+  font-size: 1.1rem;          
+  line-height: 1.8;           
+  color: #f5f5f5;             
+  font-weight: 300;           
+  text-align: center;
+}
+.intro-heading {
+  font-family: 'Playfair Display', serif;
+  color: #ffb347;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
