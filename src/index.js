@@ -1,2 +1,4 @@
 import "./styles.css";
-console.log("Sup David!!");
+import { homePage } from "./home.js";
+
+homePage();

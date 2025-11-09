@@ -74,7 +74,7 @@ body {
     margin: 20px;
 }
 
-#explore{
+.explore{
     padding: 8px 16px;
     cursor: pointer;
     background-color: #DEA54B;
@@ -83,7 +83,7 @@ body {
     font-size: 1.1rem; 
 }
 
-#explore:hover{
+.explore:hover{
   transform: scale(1.05);
   box-shadow: 0 0 5px #d4a017;
   transition: 0.3s ease;
@@ -115,3 +115,5 @@ body {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
+
+
