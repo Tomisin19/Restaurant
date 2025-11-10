@@ -2,6 +2,7 @@ export function homePage() {
   const homeBtn = document.getElementById("home");
   const content = document.getElementById("content");
 
+  // If the Home button is clicked, add the home page elements to the DOM
   homeBtn.addEventListener("click", (e) => {
     if (content.querySelector(".intro") || content.querySelector(".hours"))
       return;
