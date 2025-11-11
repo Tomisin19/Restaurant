@@ -109,11 +109,33 @@ body {
   font-weight: 300;           
   text-align: center;
 }
-.intro-heading {
+.intro-heading{
   font-family: 'Playfair Display', serif;
   color: #ffb347;
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
+.menu-heading{
+  font-family: 'Playfair Display', serif;
+  color: #ffb347;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 4px solid #0F1A20;
+  padding: 8px 48px;
+  border-radius: 8px;
+}
 
-
+.menu-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+}
+img{
+    height: 200px;
+    width: 250px;
+    border-radius: 16px;
+}
+.item{
+    max-width: 300px;
+}
